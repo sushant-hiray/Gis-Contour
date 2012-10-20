@@ -1,0 +1,18 @@
+Enter the ldap id and password in proxies.txt in the following way:
+
+http://username:password@netmon.iitb.ac.in:80
+
+For running the application, in the terminal type the following
+
+python Contour.py Latitude Longitude Length SamplingRate Name
+
+where Latitude and Longitude are the lat and lon of the centre point.
+Length is the distance of the area to be plotted.
+SamplingRate is the interval in which the contour is to be sampled
+Name is the name of the file to be produced.
+
+eg: python Contour.py 19.13 72.34 1 0.01 temp
+
+this produces a contour named temp with 19.13 and 72.34 as the centre, with an area of 1km x 1km sampled at 0.01 kms, ie having 10000 sample points.
+
+The bounding coordinates are written in the file 'Name_bound.txt', in this case it being 'temp_bound.txt'
